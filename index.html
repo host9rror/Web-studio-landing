@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" hidden>
       <div class="container header-container">
         <nav class="nav">
           <a class="logo" href="./index.html"
@@ -53,13 +53,19 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="burger-btn-open">
+          <svg width="32" height="32" class="burger-btn-icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- Title (Section 1) -->
-      <section class="title-sec">
-        <div class="container tite-sec-container">
+      <section class="title-sec" hidden>
+        <div class="container tite-sec-container" hidden>
           <h1 class="title-text">
             Effective Solutions <br />
             for Your Business
@@ -72,10 +78,10 @@
 
       <!-- Advantages (Section 2) -->
       <section class="advantages-sec">
-        <div class="container advantages-sec-container">
+        <div class="container">
           <h2 class="hidden-text">Why WebStudio?</h2>
           <ul class="advantages-section-list">
-            <li class="container advantages-item-container">
+            <li class="advantages-item-container">
               <div class="advantages-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -89,7 +95,7 @@
                 </p>
               </div>
             </li>
-            <li class="container advantages-item-container">
+            <li class="advantages-item-container">
               <div class="advantages-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -103,7 +109,7 @@
                 </p>
               </div>
             </li>
-            <li class="container advantages-item-container">
+            <li class="advantages-item-container">
               <div class="advantages-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -117,7 +123,7 @@
                 </p>
               </div>
             </li>
-            <li class="container advantages-item-container">
+            <li class="advantages-item-container">
               <div class="advantages-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -309,7 +315,7 @@
       </section>
 
       <!-- Our Portfolio (Section 4) -->
-      <section class="our-portfolio-section">
+      <section class="our-portfolio-section" hidden>
         <div class="container our-portfolio-container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="portfolio-apps-list">
@@ -437,76 +443,78 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
-        <!-- Logo & paragraph -->
-        <div class="footer-desc">
-          <a class="logo-footer" href="./index.html"
-            >Web<span class="studio-span_">Studio</span></a
-          >
-          <p class="footer-class">
-            Increase the flow of customers and <br />
-            sales for your business with digital <br />
-            marketing & growth solutions.
-          </p>
-        </div>
-        <!-- Social links -->
-        <div class="social-media">
-          <p class="footer-p">Social media</p>
-          <ul class="footer-social-link">
-            <li class="footer-social-item">
-              <a class="footer-icon-link" href="">
-                <svg width="24" height="24" class="team-social-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+      <div class="container-footer container">
+        <div class="footer-wrapper">
+          <!-- Logo & paragraph -->
+          <div class="footer-desc">
+            <a class="logo-footer" href="./index.html"
+              >Web<span class="studio-span_">Studio</span></a
+            >
+            <p class="footer-class">
+              Increase the flow of customers and <br />
+              sales for your business with digital <br />
+              marketing & growth solutions.
+            </p>
+          </div>
+          <!-- Social links -->
+          <div class="social-media">
+            <p class="footer-p">Social media</p>
+            <ul class="footer-social-link">
+              <li class="footer-social-item">
+                <a class="footer-icon-link" href="">
+                  <svg width="24" height="24" class="team-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-icon-link" href="">
+                  <svg width="24" height="24" class="team-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-icon-link" href="">
+                  <svg width="24" height="24" class="team-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-icon-link" href="">
+                  <svg width="24" height="24" class="team-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Mailing -->
+          <div class="mailing">
+            <p class="footer-p">Subscribe</p>
+            <form class="mailing-form">
+              <label class="label-email-footer">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="input-email-footer" />
+              </label>
+              <button type="submit" class="footer-btn">
+                Subscribe
+                <svg width="24" height="24" class="footer-button-icon">
+                  <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-icon-link" href="">
-                <svg width="24" height="24" class="team-social-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-icon-link" href="">
-                <svg width="24" height="24" class="team-social-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-icon-link" href="">
-                <svg width="24" height="24" class="team-social-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Mailing -->
-        <div class="mailing">
-          <p class="footer-p">Subscribe</p>
-          <form class="mailing-form">
-            <label class="label-email-footer">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="input-email-footer" />
-            </label>
-            <button type="submit" class="footer-btn">
-              Subscribe
-              <svg width="24" height="24" class="footer-button-icon">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- Modal Window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button
           type="button"
