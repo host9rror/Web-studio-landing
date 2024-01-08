@@ -157,6 +157,10 @@ header {
   letter-spacing: 0.32px;
 }
 
+.current-mobile-menu {
+  color: #404bbf;
+}
+
 .current::after {
   display: flex;
   position: absolute;
@@ -234,22 +238,48 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main/people-office.jpg);
+    url(../images/main/Mobile/Dark-bg_mob@1x.jpg);
   max-width: 1440px;
   margin: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 600px;
   padding-top: 72px;
   padding-bottom: 72px;
+}
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi) {
+  .title-sec {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main/Mobile/Dark-bg_mob@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .title-sec {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main/Tablet/Dark-bg-tab@1x.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .title-sec {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main/Tablet/Dark-bg-tab@2x.jpg);
   }
 }
 
@@ -257,6 +287,22 @@ header {
   .title-sec {
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main/people-office.jpg);
+  }
+}
+
+@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  (min-width: 1158px) and (min-resolution: 192dpi) {
+  .title-sec {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main/people-office-desk@2x.jpg);
   }
 }
 
@@ -270,7 +316,8 @@ header {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+  max-width: 200px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -334,9 +381,6 @@ header {
 }
 
 .advantages-sec {
-  display: flex;
-  justify-content: center;
-  padding: 96px 16px;
   padding: 96px 0;
 }
 
@@ -480,8 +524,6 @@ header {
 
 /* Our team(section 3) */
 .our-team-sec {
-  display: flex;
-  justify-content: center;
   background: #f4f4fd;
   padding: 96px 0;
 }
@@ -627,9 +669,6 @@ header {
 
 @media only screen and (min-width: 768px) {
   .our-portfolio-section {
-    display: flex;
-    justify-content: center;
-    background: #f4f4fd;
     padding: 96px 0;
   }
 }
@@ -643,11 +682,6 @@ header {
 
 .our-portfolio-container {
   margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .our-portfolio-container {
-  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -675,11 +709,11 @@ header {
   gap: 48px;
   padding-left: 0;
   flex-direction: column;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .portfolio-apps-list {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -949,7 +983,7 @@ header {
   justify-content: center;
   gap: 16px;
   padding-left: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 .footer-icon-link {
@@ -1211,9 +1245,6 @@ header {
   border-color: #4d5ae5;
 }
 
-.modal-chekbox {
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1335,7 +1366,7 @@ header {
   text-decoration: none;
 }
 
-.mobile-menu-link.current {
+.mobile-menu-link.current-mobile-menu {
   color: #404bbf;
 }
 
@@ -1359,7 +1390,7 @@ header {
   text-decoration: none;
 }
 
-.mobile-menu-contacts-link.current {
+.mobile-menu-contacts-link.current-mobile-menu {
   color: #4d5ae5;
 }
 
